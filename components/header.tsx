@@ -28,8 +28,8 @@ export default function Header() {
               <span className="font-semibold text-lg bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
                 Aura1.0
               </span>
-              <span className="text-xs dark:text-muted-foreground">
-                Your mental health Companion{" "}
+              <span className="hidden sm:block text-xs dark:text-muted-foreground">
+                Your mental health Companion
               </span>
             </div>
           </Link>

@@ -16,51 +16,51 @@ import {
 const features = [
   {
     icon: <Bot className="w-10 h-10 text-primary" />,
-    title: "AI-Powered Therapy",
+    title: "Empathetic AI Companion",
     description:
-      "24/7 access to empathetic AI agents trained in various therapeutic approaches, providing personalized mental health support.",
+      "Aura provides a judgment-free space to express yourself, with 24/7 access to an AI companion that listens and offers personalized emotional support.",
   },
   {
     icon: <Shield className="w-10 h-10 text-primary" />,
-    title: "Blockchain Security",
+    title: "Privacy Protection",
     description:
-      "Your therapy sessions are secured by blockchain technology, ensuring complete privacy and transparent record-keeping.",
+      "Your conversations are completely private and secure, with strict ethical guidelines and respect for your personal boundaries.",
   },
   {
     icon: <Brain className="w-10 h-10 text-primary" />,
-    title: "Smart Analysis",
+    title: "Emotional Intelligence",
     description:
-      "Advanced NLP and emotion detection helps understand your mental state and provide appropriate interventions.",
+      "Aura adapts to your emotional state, providing evidence-based techniques and gentle guidance tailored to your current needs.",
   },
   {
     icon: <Activity className="w-10 h-10 text-primary" />,
-    title: "Crisis Detection",
+    title: "Mood Tracking",
     description:
-      "Real-time monitoring and emergency response protocols to ensure your safety during critical situations.",
+      "Express how you're feeling with our intuitive slider, allowing Aura to better understand your emotional journey over time.",
   },
   {
     icon: <Wifi className="w-10 h-10 text-primary" />,
-    title: "IoT Integration",
+    title: "Accessible Support",
     description:
-      "Connect with smart home devices to create an ambient therapeutic environment that adapts to your needs.",
+      "Access emotional support anytime, anywhere with our responsive web application designed for all your devices.",
   },
   {
     icon: <LineChart className="w-10 h-10 text-primary" />,
-    title: "Progress Tracking",
+    title: "Personal Growth",
     description:
-      "Detailed analytics and insights about your mental health journey, with blockchain-verified session records.",
+      "Track your emotional wellbeing journey with insights that help you understand patterns and progress in your mental health.",
   },
   {
     icon: <Fingerprint className="w-10 h-10 text-primary" />,
-    title: "Privacy First",
+    title: "Personalized Experience",
     description:
-      "End-to-end encryption and zero-knowledge proofs ensure your data remains completely confidential.",
+      "Aura learns from your interactions to provide increasingly relevant support tailored specifically to your unique needs.",
   },
   {
     icon: <Heart className="w-10 h-10 text-primary" />,
-    title: "Holistic Care",
+    title: "Evidence-Based Techniques",
     description:
-      "Integration with wearables and health providers for comprehensive mental wellness monitoring.",
+      "Aura incorporates CBT, mindfulness exercises, and positive psychology practices—all scientifically validated approaches—offering guided breathing techniques, thought reframing tools, and structured self-reflection prompts.",
   },
 ];
 
@@ -74,12 +74,12 @@ export default function FeaturesPage() {
         className="text-center mb-16"
       >
         <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-          Platform Features
+          Meet Aura`s Features
         </h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Discover how our AI-powered platform revolutionizes mental health
-          support with cutting-edge technology and unwavering privacy
-          protection.
+          Discover how Aura, your AI mental health companion, provides
+          empathetic support, personalized guidance, and a safe space for
+          emotional wellbeing.
         </p>
       </motion.div>
 
@@ -106,16 +106,18 @@ export default function FeaturesPage() {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-center mt-16"
       >
-        <h2 className="text-2xl font-semibold mb-4">Ready to Get Started?</h2>
+        <h2 className="text-2xl font-semibold mb-4">
+          Begin Your Emotional Wellbeing Journey
+        </h2>
         <p className="text-muted-foreground mb-8">
-          Join thousands of users benefiting from AI-powered mental health
-          support.
+          Experience a new kind of emotional support with Aura, your personal AI
+          companion
         </p>
         <a
           href="/dashboard"
           className="inline-flex items-center px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
         >
-          Start Your Journey
+          Start With Aura
           <Heart className="ml-2 w-5 h-5" />
         </a>
       </motion.div>

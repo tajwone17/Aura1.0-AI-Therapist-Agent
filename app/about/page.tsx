@@ -61,6 +61,104 @@ export default function AboutPage() {
           </motion.div>
         ))}
       </div>
+
+      {/* Development Team Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="mb-20"
+      >
+        <h2 className="text-3xl font-bold mb-10 text-center bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+          Our Development Team
+        </h2>
+
+        {/* Supervisor Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mb-12"
+        >
+          <Card className="p-8 text-center max-w-md mx-auto bg-card/50 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-primary/20">
+            <div className="mb-6 flex justify-center">
+              <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center">
+                <span className="text-2xl font-bold text-primary">KA</span>
+              </div>
+            </div>
+            <h3 className="text-2xl font-semibold mb-1">KM Asifuzzaman</h3>
+            <p className="text-primary mb-3 font-medium">Project Supervisor</p>
+          </Card>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Team Member 1 */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <Card className="p-6 text-center h-full bg-card/50 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+              <div className="mb-4 flex justify-center">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-xl font-bold text-primary">JC</span>
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold mb-1">
+                Jakaria Chowdhury Tajwone
+              </h3>
+            
+              <div className="text-muted-foreground text-sm">
+                <p>ID: 0562310005101031</p>
+              </div>
+            </Card>
+          </motion.div>
+
+          {/* Team Member 2 */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <Card className="p-6 text-center h-full bg-card/50 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+              <div className="mb-4 flex justify-center">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-xl font-bold text-primary">MP</span>
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold mb-1">
+                Md. Masum Prodhania
+              </h3>
+             
+              <div className="text-muted-foreground text-sm">
+                <p>ID: 0562310005101003</p>
+              </div>
+            </Card>
+          </motion.div>
+
+          {/* Team Member 3 */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <Card className="p-6 text-center h-full bg-card/50 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+              <div className="mb-4 flex justify-center">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-xl font-bold text-primary">MH</span>
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold mb-1">
+                Miftahul Hasan Mehedi
+              </h3>
+            
+              <div className="text-muted-foreground text-sm">
+                <p>ID: 0562310005101054</p>
+              </div>
+            </Card>
+          </motion.div>
+        </div>
+      </motion.div>
     </div>
   );
 }
