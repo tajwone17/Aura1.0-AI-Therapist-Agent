@@ -1,13 +1,18 @@
 
-import { AudioWaveform } from "lucide-react";
+"use client"
+import { AudioWaveform, Menu, MessageCircle, X } from "lucide-react";
 import Link from "next/link";
 import { SignInButton } from "./auth/sign-in-button";
 import { ThemeToggle } from "./theme-toggle";
+import { Button } from "./ui/button";
+import { useState } from "react";
 export default function Header() {
+     const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navItems = [
-    { href: "/about", label: "About Aura" },
     { href: "/features", label: "Features" },
+     { href: "/about", label: "About Aura" },
   ];
+ 
   return (
     <div className="w-full fixed z-50 top-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="absolute inset-0 border-b border-primary/10" />
@@ -45,9 +50,48 @@ export default function Header() {
             <div className="flex items-center gap-3">
                 <ThemeToggle/>
                 <SignInButton/>
+                   <Button
+                variant="ghost"
+                size="icon"
+                className="md:hidden"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                {isMenuOpen ? (
+                  <X className="h-5 w-5" />
+                ) : (
+                  <Menu className="h-5 w-5" />
+                )}
+              </Button>
             </div>
           </div>
         </div>
+         {isMenuOpen && (
+          <div className="md:hidden border-t border-primary/10">
+            <nav className="flex flex-col space-y-1 py-4">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="px-4 py-3 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-primary/5 rounded-md transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              ))}
+             
+                <Button
+                  asChild
+                  className="mt-2 mx-4 gap-2 bg-primary/90 hover:bg-primary"
+                >
+                  <Link href="/dashboard">
+                    <MessageCircle className="w-4 h-4" />
+                    <span>Start Chat</span>
+                  </Link>
+                </Button>
+            
+            </nav>
+          </div>
+        )}
       </header>
     </div>
   );
