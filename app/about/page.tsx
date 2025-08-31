@@ -36,7 +36,7 @@ export default function AboutPage() {
         className="text-center mb-20"
       >
         <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-          About Aura3.0
+          About LyraMind 1.0
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           We`re revolutionizing mental health support by combining cutting-edge
@@ -86,7 +86,7 @@ export default function AboutPage() {
                 <span className="text-2xl font-bold text-primary">KA</span>
               </div>
             </div>
-            <h3 className="text-2xl font-semibold mb-1">KM Asifuzzaman</h3>
+            <h3 className="text-2xl font-semibold mb-1">Khadem Mohammad Asifuzzaman</h3>
             <p className="text-primary mb-3 font-medium">Project Supervisor</p>
           </Card>
         </motion.div>

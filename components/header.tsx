@@ -10,7 +10,7 @@ export default function Header() {
      const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navItems = [
     { href: "/features", label: "Features" },
-     { href: "/about", label: "About Aura" },
+     { href: "/about", label: "About LyraMind" },
   ];
  
   return (
@@ -26,7 +26,7 @@ export default function Header() {
             <AudioWaveform className="h-7 w-7 text-primary animate-pulse-gentle" />
             <div className="flex flex-col">
               <span className="font-semibold text-lg bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-                Aura1.0
+                LyraMind1.0
               </span>
               <span className="hidden sm:block text-xs dark:text-muted-foreground">
                 Your mental health Companion

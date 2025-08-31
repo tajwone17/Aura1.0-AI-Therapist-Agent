@@ -18,7 +18,7 @@ const features = [
     icon: <Bot className="w-10 h-10 text-primary" />,
     title: "Empathetic AI Companion",
     description:
-      "Aura provides a judgment-free space to express yourself, with 24/7 access to an AI companion that listens and offers personalized emotional support.",
+      "LyraMind provides a judgment-free space to express yourself, with 24/7 access to an AI companion that listens and offers personalized emotional support.",
   },
   {
     icon: <Shield className="w-10 h-10 text-primary" />,
@@ -30,13 +30,13 @@ const features = [
     icon: <Brain className="w-10 h-10 text-primary" />,
     title: "Emotional Intelligence",
     description:
-      "Aura adapts to your emotional state, providing evidence-based techniques and gentle guidance tailored to your current needs.",
+      "LyraMind adapts to your emotional state, providing evidence-based techniques and gentle guidance tailored to your current needs.",
   },
   {
     icon: <Activity className="w-10 h-10 text-primary" />,
     title: "Mood Tracking",
     description:
-      "Express how you're feeling with our intuitive slider, allowing Aura to better understand your emotional journey over time.",
+      "Express how you're feeling with our intuitive slider, allowing LyraMind to better understand your emotional journey over time.",
   },
   {
     icon: <Wifi className="w-10 h-10 text-primary" />,
@@ -54,13 +54,13 @@ const features = [
     icon: <Fingerprint className="w-10 h-10 text-primary" />,
     title: "Personalized Experience",
     description:
-      "Aura learns from your interactions to provide increasingly relevant support tailored specifically to your unique needs.",
+      "LyraMind learns from your interactions to provide increasingly relevant support tailored specifically to your unique needs.",
   },
   {
     icon: <Heart className="w-10 h-10 text-primary" />,
     title: "Evidence-Based Techniques",
     description:
-      "Aura incorporates CBT, mindfulness exercises, and positive psychology practices—all scientifically validated approaches—offering guided breathing techniques, thought reframing tools, and structured self-reflection prompts.",
+      "LyraMind incorporates CBT, mindfulness exercises, and positive psychology practices—all scientifically validated approaches—offering guided breathing techniques, thought reframing tools, and structured self-reflection prompts.",
   },
 ];
 
@@ -74,10 +74,10 @@ export default function FeaturesPage() {
         className="text-center mb-16"
       >
         <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-          Meet Aura`s Features
+          Meet LyraMind`s Features
         </h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Discover how Aura, your AI mental health companion, provides
+          Discover how LyraMind, your AI mental health companion, provides
           empathetic support, personalized guidance, and a safe space for
           emotional wellbeing.
         </p>
@@ -110,14 +110,14 @@ export default function FeaturesPage() {
           Begin Your Emotional Wellbeing Journey
         </h2>
         <p className="text-muted-foreground mb-8">
-          Experience a new kind of emotional support with Aura, your personal AI
-          companion
+          Experience a new kind of emotional support with LyraMind, your
+          personal AI companion
         </p>
         <a
           href="/dashboard"
           className="inline-flex items-center px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
         >
-          Start With Aura
+          Start With LyraMind
           <Heart className="ml-2 w-5 h-5" />
         </a>
       </motion.div>

@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aura - AI Therapist Agent",
+  title: "LyraMind - AI Therapist Agent",
   description:
-    "Aura is your personal AI therapist agent, providing support and guidance powered by advanced AI.",
+    "LyraMind is your personal AI therapist agent, providing support and guidance powered by advanced AI.",
 };
 
 export default function RootLayout({
