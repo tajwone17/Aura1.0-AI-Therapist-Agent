@@ -30,6 +30,7 @@ export default function SignupPage() {
     try {
       await registerUser(name, email, password);
       router.push("/login");
+    //   eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
       setError(err.message || "Signup failed. Please try again.");
     } finally {

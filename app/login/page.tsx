@@ -129,7 +129,7 @@ export default function LoginPage() {
               </Link>
               <span className="text-muted-foreground">·</span>
               <Link
-                href="/forgot-password"
+                href="/forget-password"
                 className="text-primary underline hover:text-primary/80 transition-colors"
               >
                 Forgot password?
